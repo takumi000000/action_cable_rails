@@ -1,0 +1,10 @@
+<h1>ChatRooms#show</h1>
+<div id="chat">
+  <% @chat_messages.each do |chat_message| %>
+    <p><%= chat_message.content %></p>
+  <% end %>
+</div>
+<form>
+  投稿: <input type="text" />
+  <input type="submit" value="投稿" onClick="postChatMessage()" />
+</form>
